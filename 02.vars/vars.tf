@@ -1,6 +1,6 @@
 variable "sample" {}
 
-varible "sample" {
+variable "sample" {
   default = "new world"
 }
 
