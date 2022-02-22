@@ -1,7 +1,7 @@
-variable "sample" {}
+#variable "sample" {}
 
 variable "sample" {
-  default = "new world"
+  default = "Newworld"
 }
 
 output "sample" {
