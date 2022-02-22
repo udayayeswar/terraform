@@ -1,4 +1,4 @@
 output "sample" {
-  value       = "Hello World"
+  value       = "Hello Udaya"
   description = "Hello to World"
 }
