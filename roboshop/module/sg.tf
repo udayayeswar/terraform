@@ -12,8 +12,8 @@ resource "aws_security_group" "allow_app" {
 
   ingress {
     description = "APPPORT"
-    from_port   = var.COMPONENT["port"]
-    to_port     = var.COMPONENT["port"]
+    from_port   = var.PORT
+    to_port     = var.PORT
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
