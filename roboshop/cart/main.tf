@@ -1,8 +1,5 @@
-varible "COMPONENT" {
-  default = "cart"
-}
-
 module "roboshop" {
-  source = "../module"
-  COMPONENT = var.COMPONENT
+  source    = "../module"
+  COMPONENT = "cart"
+  PORT      = 8080
 }

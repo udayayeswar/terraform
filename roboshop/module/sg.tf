@@ -1,11 +1,19 @@
-resource "aws_security_group" "allow_tls" {
+resource "aws_security_group" "allow_app" {
   name        = "allow_${var.COMPONENT}"
-  description = "Allow TLS inbound traffic"
+  description = "Allow  inbound for ${var.COMPONENT} component"
 
   ingress {
     description = "TLS from VPC"
     from_port   = 22
     to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "APPPORT"
+    from_port   = var.COMPONENT["port"]
+    to_port     = var.COMPONENT["port"]
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
