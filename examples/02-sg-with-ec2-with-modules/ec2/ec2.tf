@@ -8,4 +8,4 @@ resource "aws_instance" "web" {
   }
 }
 
-variable "SG_ID"{}
+variable "SG_ID" {}
