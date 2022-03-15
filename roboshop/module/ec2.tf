@@ -44,7 +44,7 @@ resource "null_resource" "ansible-apply" {
       password = "DevOps321"
     }
     inline = [
-      "ansible-pull -U https://github.com/udayayeswar/Ansable roboshop-pull.yml -e COMPONENT=${var.COMPONENT["name"]}"
+      "ansible-pull -U https://github.com/udayayeswar/Ansable roboshop-pull.yml -e COMPONENT=${var.COMPONENT["name"]} -e ENV=dev"
     ]
   }
 }
