@@ -28,6 +28,9 @@ module "shipping" {
 module "user" {
   source = "./user"
 }
+module "dispatch" {
+  source = "./dispatch"
+}
 #module "roboshop" {
 #  count     = length(var.COMP)
 #  source    = "./module"
