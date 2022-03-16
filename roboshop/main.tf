@@ -10,12 +10,12 @@ module "mongodb" {
 module "catalogue" {
   source = "./catalogue"
 }
-#module "mysql" {
-#  source = "./mysql"
-#}
-#module "redis" {
-#  source = "./redis"
-#}
+module "mysql" {
+  source = "./mysql"
+}
+module "redis" {
+  source = "./redis"
+}
 #module "rabbitmq" {
 #  source = "./rabbitmq"
 #}
