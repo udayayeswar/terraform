@@ -16,20 +16,20 @@ module "mysql" {
 module "redis" {
   source = "./redis"
 }
-#module "rabbitmq" {
-#  source = "./rabbitmq"
-#}
-#module "payment" {
-#  source = "./payment"
-#}
-#module "shipping" {
-#  source = "./shipping"
-#}
-#module "user" {
-#  source = "./user"
-#}
+module "rabbitmq" {
+  source = "./rabbitmq"
+}
+module "payment" {
+  source = "./payment"
+}
+module "shipping" {
+  source = "./shipping"
+}
+module "user" {
+  source = "./user"
+}
 #module "roboshop" {
 #  count     = length(var.COMP)
 #  source    = "./module"
-#  COMPONENT = var.COMP[count.index]
+##  COMPONENT = var.COMP[count.index]
 #}
