@@ -7,9 +7,9 @@ module "cart" {
 #module "mongodb" {
 #  source = "./mongodb"
 #}
-#module "catalogue" {
-#  source = "./catalogue"
-#}
+module "catalogue" {
+  source = "./catalogue"
+}
 #module "mysql" {
 #  source = "./mysql"
 #}
