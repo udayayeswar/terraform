@@ -4,9 +4,9 @@ module "frontend" {
 module "cart" {
   source = "./cart"
 }
-#module "mongodb" {
-#  source = "./mongodb"
-#}
+module "mongodb" {
+  source = "./mongodb"
+}
 module "catalogue" {
   source = "./catalogue"
 }
