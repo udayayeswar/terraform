@@ -16,20 +16,20 @@ resource "aws_spot_instance_request" "cheap_worker" {
   wait_for_fulfillment    = true
 
   tags = {
-    Name = var.COMPONENT["name"]
+    Name = var.COMPONENT
   }
 }
 
 resource "aws_ec2_tag" "ec2-name-tag" {
   resource_id = aws_spot_instance_request.cheap_worker.spot_instance_id
   key         = "Name"
-  value       = var.COMPONENT["name"]
+  value       = var.COMPONENT
 }
 
 resource "aws_ec2_tag" "ec2-monitor-tag" {
   resource_id = aws_spot_instance_request.cheap_worker.spot_instance_id
   key         = "Monitor"
-  value       = var.COMPONENT["monitor"]
+  value       = var.COMPONENT
 }
 
 resource "null_resource" "ansible-apply" {
